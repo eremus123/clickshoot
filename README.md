@@ -21,3 +21,10 @@ A 'duck-hunt' inspired shooting game implemented in Javascript and HTML5 (DOM in
 
 - Future enhancement one...
 - Future enhancement two...
+
+# Acknowledgements & References
+
+- Background Image: https://www.reddit.com/r/PixelArt/comments/xhnuij/japanese_village_pixel_art/
+- Ninjas:
+
+- Future enhancement two...

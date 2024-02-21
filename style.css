@@ -1,0 +1,13 @@
+#title {
+  text-align: center; /* Optionally center the text horizontally */
+  font-size: 36px; /* Set the desired font size */
+  color: rgb(198, 15, 15); /* Set the desired font color */
+  bottom: 0px;
+  position: absolute;
+}
+
+body {
+  background-image: url("/assets/bg.png");
+  background-repeat: no-repeat;
+  background-color: black;
+}
