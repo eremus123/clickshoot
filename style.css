@@ -11,3 +11,42 @@ body {
   background-repeat: no-repeat;
   background-color: black;
 }
+
+img {
+  width: 100px;
+  position: absolute;
+}
+
+#n1 {
+  left: 36%;
+  top: 38%;
+}
+
+#n2 {
+  left: 22%;
+  top: 22%;
+}
+
+#n3 {
+  left: 1%;
+  top: 63%;
+  animation-name: ninja1;
+  animation-duration: 7000ms;
+}
+
+#n4 {
+  left: 80%;
+  top: 37%;
+}
+
+@keyframes ninja1 {
+  0% {
+    left: 0%;
+    top: 63%;
+  }
+
+  100% {
+    left: 160%;
+    top: 63%;
+  }
+}
