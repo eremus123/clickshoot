@@ -20,7 +20,7 @@ body {
 img {
   width: 100px;
   position: absolute;
-  animation-fill-mode: forwards; /*so the ninjas dont clip back to og position aft the animations */
+  /* animation-fill-mode: forwards; so the ninjas dont clip back to og position aft the animations */
 }
 
 #score {
@@ -43,17 +43,12 @@ img {
 }
 
 #n2 {
-  left: 22%;
-  top: 22%;
   animation-name: ninja1;
   animation-duration: 10000ms;
   animation-iteration-count: infinite;
-  animation-direction: alternate;
 }
 
 #n3 {
-  left: 1%;
-  top: 63%;
   animation-name: ninja1;
   animation-duration: 6000ms;
   animation-iteration-count: infinite;
@@ -66,21 +61,12 @@ img {
 
 @keyframes ninja1 {
   0% {
-    left: 0%;
+    left: -20%;
     top: 63%;
   }
 
   100% {
-    left: 160%;
-    top: 63%;
-  }
-}
-@keyframes ninja2 {
-  0% {
-  }
-
-  100% {
-    left: 160%;
+    left: 130%;
     top: 63%;
   }
 }
