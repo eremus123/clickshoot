@@ -6,6 +6,10 @@
   position: absolute;
 }
 
+html {
+  cursor: url("/assets/cursor.png"), auto;
+}
+
 body {
   background-image: url("/assets/bg.png");
   background-repeat: no-repeat;
@@ -21,10 +25,17 @@ img {
 
 #score {
   position: absolute;
-  bottom: 0px;
-  right: 0px;
+  bottom: 30px;
+  right: 20px;
   color: antiquewhite;
-  font-size: 26px;
+  font-size: 42px;
+}
+#lives {
+  position: absolute;
+  bottom: 90px;
+  right: 22px;
+  color: antiquewhite;
+  font-size: 42px;
 }
 #n1 {
   left: 36%;
@@ -40,7 +51,7 @@ img {
   left: 1%;
   top: 63%;
   animation-name: ninja1;
-  animation-duration: 7000ms;
+  animation-duration: 12000ms;
 }
 
 #n4 {
