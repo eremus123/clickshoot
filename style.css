@@ -1,13 +1,13 @@
-#title {
-  text-align: center; /* Optionally center the text horizontally */
-  font-size: 36px; /* Set the desired font size */
-  color: rgb(198, 15, 15); /* Set the desired font color */
-  bottom: 0px;
-  position: absolute;
+* {
+  cursor: url("/assets/cursor.png"), auto;
 }
 
-html {
-  cursor: url("/assets/cursor.png"), auto;
+#title {
+  text-align: center;
+  font-size: 36px;
+  color: rgb(198, 15, 15);
+  bottom: 0px;
+  position: absolute;
 }
 
 body {
@@ -45,13 +45,18 @@ img {
 #n2 {
   left: 22%;
   top: 22%;
+  animation-name: ninja1;
+  animation-duration: 10000ms;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
 
 #n3 {
   left: 1%;
   top: 63%;
   animation-name: ninja1;
-  animation-duration: 12000ms;
+  animation-duration: 6000ms;
+  animation-iteration-count: infinite;
 }
 
 #n4 {
@@ -63,6 +68,15 @@ img {
   0% {
     left: 0%;
     top: 63%;
+  }
+
+  100% {
+    left: 160%;
+    top: 63%;
+  }
+}
+@keyframes ninja2 {
+  0% {
   }
 
   100% {
