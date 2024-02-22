@@ -16,8 +16,16 @@ body {
 img {
   width: 100px;
   position: absolute;
+  animation-fill-mode: forwards; /*so the ninjas dont clip back to og position aft the animations */
 }
 
+#score {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  color: antiquewhite;
+  font-size: 26px;
+}
 #n1 {
   left: 36%;
   top: 38%;
