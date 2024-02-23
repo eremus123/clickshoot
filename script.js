@@ -5,12 +5,15 @@ const shotSound = document.getElementById("shotmp3");
 const bgm = document.getElementById("bgm");
 const hitSound = document.getElementById("hitmp3");
 
-bgm.volume = 0.2;
+bgm.volume = 0.5;
 bgm.play();
 
 const ninjas = document.querySelectorAll(".ninja");
 
 ninjas.forEach((ninja) => {
+  ninja.style.left = randomizeAnimation(0, 100) + "%";
+  ninja.style.top = randomizeAnimation(0, 100) + "%";
+  ninja.style.animationName = "ninja1";
   ninja.addEventListener("click", shoot);
 });
 
@@ -20,11 +23,16 @@ document.addEventListener("click", (e) => {
   }
 });
 
+
+  function randomizeAnimation(min,max){
+  return Math.random() * (max - min) + min;
+}
+
 function shoot(e) {
-  //   shotSound.play(); // Play the sound effect
+  //   shotSound.play(); 
   const clickedNinja = e.target; // Get the specific clicked ninja
   clickedNinja.style.display = "none"; // Hide the clicked ninja
-  hitSound.play(); // Play the sound effect
+  hitSound.play();
   updateScore();
 }
 
