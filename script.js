@@ -14,6 +14,8 @@ ninjas.forEach((ninja) => {
   ninja.style.left = randomizeAnimation(0, 100) + "%";
   ninja.style.top = randomizeAnimation(0, 100) + "%";
   ninja.style.animationName = "ninja1";
+  ninja.style.animationDuration = Math.random()* 20000 + 5000 + "ms";
+  ninja.style.animationIterationCount = "infinite";
   ninja.addEventListener("click", shoot);
 });
 
