@@ -5,6 +5,9 @@ const shotSound = document.getElementById("shotmp3");
 const bgm = document.getElementById("bgm");
 const hitSound = document.getElementById("hitmp3");
 
+bgm.volume = 0.2;
+bgm.play();
+
 const ninjas = document.querySelectorAll(".ninja");
 
 ninjas.forEach((ninja) => {
