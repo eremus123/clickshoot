@@ -9,15 +9,31 @@ bgm.volume = 0.5;
 bgm.play();
 
 const ninjas = document.querySelectorAll(".ninja");
+let noOfNinjas = 0
+ninjas.forEach((ninja) => { //for each is slower than for loop
+  noOfNinjas++
+  const animationId= 'ninja' + noOfNinjas
+  const keyframes = `
+      0% {
+        left: ${randomizeAnimation(-20, -5)}%;
+        top: ${randomizeAnimation(0, 100)}%;
+      }
+      100% {
+        left: ${randomizeAnimation(110, 150)}%;
+        top: ${randomizeAnimation(0, 100)}%;
+      }
+    `;
+  const style = document.createElement("style");
+  style.innerHTML = `@keyframes ${animationId} { ${keyframes} }`;
+  console.log(`@keyframes ${animationId} { ${keyframes} }`);
+  document.body.appendChild(style);  
 
-ninjas.forEach((ninja) => {
-  ninja.style.left = randomizeAnimation(0, 100) + "%";
-  ninja.style.top = randomizeAnimation(0, 100) + "%";
-  ninja.style.animationName = "ninja1";
+  ninja.style.animationName = animationId;
   ninja.style.animationDuration = Math.random()* 20000 + 5000 + "ms";
   ninja.style.animationIterationCount = "infinite";
   ninja.addEventListener("click", shoot);
 });
+
 
 document.addEventListener("click", (e) => {
   if (!e.target.classList.contains("ninja")) {
@@ -26,7 +42,7 @@ document.addEventListener("click", (e) => {
 });
 
 
-  function randomizeAnimation(min,max){
+function randomizeAnimation(min,max){
   return Math.random() * (max - min) + min;
 }
 

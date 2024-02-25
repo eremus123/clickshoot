@@ -19,7 +19,7 @@ body {
 }
 
 img {
-  width: 100px;
+  width: 120px;
   position: absolute;
   /* animation-fill-mode: forwards; so the ninjas dont clip back to og position aft the animations */
 }
@@ -38,7 +38,7 @@ img {
   color: antiquewhite;
   font-size: 42px;
 }
-#n1 {
+/* #n1 {
   left: 36%;
   top: 38%;
 }
@@ -70,4 +70,4 @@ img {
     left: 130%;
     top: 63%;
   }
-}
+} */
