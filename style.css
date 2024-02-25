@@ -19,7 +19,7 @@ body {
 }
 
 img {
-  width: 120px;
+  width: 180px;
   position: absolute;
   /* animation-fill-mode: forwards; so the ninjas dont clip back to og position aft the animations */
 }
