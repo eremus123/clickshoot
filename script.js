@@ -29,7 +29,7 @@ ninjas.forEach((ninja) => { //for each is slower than for loop
   document.body.appendChild(style);  
 
   ninja.style.animationName = animationId;
-  ninja.style.animationDuration = Math.random()* 20000 + 5000 + "ms";
+  ninja.style.animationDuration = randomizeAnimation(8000,16000) + "ms";
   ninja.style.animationIterationCount = "infinite";
   ninja.addEventListener("click", shoot);
 });
@@ -52,6 +52,7 @@ function shoot(e) {
   clickedNinja.style.display = "none"; // Hide the clicked ninja
   hitSound.play();
   updateScore();
+  newNinja();
 }
 
 function miss(e) {
@@ -72,3 +73,32 @@ function loseLives() {
   lives--;
   document.getElementById("lives").innerHTML = `Current Lives: ${lives}`;
 }
+
+
+function newNinja() {
+  const ninja = document.createElement("img");
+  ninja.classList.add("ninja");
+  ninja.src = `/assets/ninja1.gif`;
+  noOfNinjas++
+  const animationId= 'ninja' + noOfNinjas
+  const keyframes = `
+    0% {
+      left: ${randomizeAnimation(-20, -5)}%;
+      top: ${randomizeAnimation(0, 100)}%;
+    }
+    100% {
+      left: ${randomizeAnimation(105, 130)}%;
+      top: ${randomizeAnimation(0, 100)}%;
+    }
+  `;
+
+  const style = document.createElement("style");
+  style.innerHTML = `@keyframes ${animationId} { ${keyframes} }`;
+  document.body.appendChild(style);
+
+  ninja.style.animationName = animationId;
+  ninja.style.animationDuration = randomizeAnimation(10000,20000) + "ms";
+  ninja.style.animationIterationCount = "infinite";
+  document.body.appendChild(ninja);
+  ninja.addEventListener("click", shoot);}
+  
