@@ -71,7 +71,7 @@ function loseLives() {
 function newNinja() {
   const ninja = document.createElement("img");
   ninja.classList.add("ninja");
-  ninja.src = `/assets/ninja${Math.ceil(Math.random() * 4)}.gif`;
+  ninja.src = `./assets/ninja${Math.ceil(Math.random() * 4)}.gif`;
   noOfNinjas++;
   const animationId = "ninja" + noOfNinjas;
   const keyframes = `
@@ -106,7 +106,7 @@ function start() {
 
   document.getElementById("ready").style.display = "block";
   startSound.play();
-  
+
   setTimeout(() => {
     bgm.play();
     document.getElementById("ready").style.display = "none";

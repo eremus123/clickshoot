@@ -1,10 +1,10 @@
 * {
-  cursor: url("/assets/cursor.png"), auto;
+  cursor: url("./assets/cursor.png"), auto;
 }
 
 @font-face {
   font-family: "menufont";
-  src: url("assets/menufont.ttf") format("truetype");
+  src: url("./assets/menufont.ttf") format("truetype");
 }
 
 #title {
@@ -18,7 +18,7 @@
 }
 
 body {
-  background-image: url("/assets/bg.png");
+  background-image: url("./assets/bg.png");
   background-repeat: no-repeat;
   background-color: black;
   background-size: cover;
