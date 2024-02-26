@@ -2,6 +2,11 @@
   cursor: url("/assets/cursor.png"), auto;
 }
 
+@font-face {
+  font-family: "menufont"; /* Define a name for your custom font */
+  src: url("assets/menufont.ttf") format("truetype"); /* Provide the path to your font file */
+}
+
 #title {
   text-align: center;
   font-size: 36px;
@@ -71,3 +76,45 @@ img {
     top: 63%;
   }
 } */
+/* Add styles for the menu overlay */
+#menu {
+  display: flex;
+  font-family: "menufont";
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  z-index: 1000;
+}
+
+#menu h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+#menu button {
+  padding: 20px;
+  margin: 20px;
+  font-size: 36px;
+  width: 160px;
+  background-color: #ff0000;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-family: "menufont";
+}
+
+#menu button:hover {
+  background-color: #45a049;
+}
+
+/* Hide the menu by default */
+.hidden {
+  display: none;
+}

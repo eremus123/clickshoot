@@ -100,3 +100,9 @@ function newNinja() {
   document.body.appendChild(ninja);
   ninja.addEventListener("click", shoot);
 }
+
+function start() {
+  // Add code to start or reset the game
+  document.getElementById("menu-overlay").classList.add("hidden");
+  // Additional game initialization code goes here
+}
