@@ -35,4 +35,4 @@ A 'duck-hunt' inspired shooting game implemented in Javascript and HTML5 (DOM in
 - Shuriken Effect: https://freesound.org/people/Taira%20Komori/sounds/215009/
 - Round Start Effect: https://pixabay.com/sound-effects/kabuki-104876/
 - Tutorial: https://www.youtube.com/watch?v=v6QUZ5veMlA
-- Future enhancement two...
+- Font: https://www.fontspace.com/madou-futo-maru-gothic-font-f76590
