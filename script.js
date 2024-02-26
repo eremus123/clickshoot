@@ -6,6 +6,8 @@ const shotSound = document.getElementById("shotmp3");
 const bgm = document.getElementById("bgm");
 const hitSound = document.getElementById("hitmp3");
 const startSound = document.getElementById("startmp3");
+const thankSound = document.getElementById("thanksmp3");
+const gameoverSound = document.getElementById("gameovermp3");
 
 bgm.volume = 0.3;
 bgm.play();
@@ -13,7 +15,6 @@ bgm.play();
 const ninjas = document.querySelectorAll(".ninja");
 let noOfNinjas = 0;
 ninjas.forEach((ninja) => {
-  //for each is slower than for loop
   noOfNinjas++;
   const animationId = "ninja" + noOfNinjas;
   const keyframes = `
@@ -138,6 +139,10 @@ function startTimer(seconds){
 }
 
 function gameOver(){
+  bgm.pause();
+  gameoverSound.play();
+  thankSound.volume=0.3;
+  thankSound.play();
   if (score > highScore) {
     highScore = score;
     localStorage.setItem('highScore', highScore);
