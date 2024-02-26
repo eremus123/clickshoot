@@ -52,7 +52,7 @@ function miss(e) {
   shotSound.play();
   loseLives();
   if (lives === 0) {
-    alert(`Game Over! Your score is ${score}. Refresh to try again!`);
+    gameOver();
   }
 }
 
@@ -125,14 +125,17 @@ function startTimer(seconds){
   function updateTimer() {
     if (seconds > 0) {
         seconds--;
-        timer.innerHTML = `00:${seconds}`
-        console.log(seconds)
+        if (seconds>9){
+          timer.innerHTML = `00:${seconds}`;
+        } else timer.innerHTML = `00:0${seconds}`
         setTimeout(updateTimer, 1000); // Call itself after 1 second
     } else {
-      alert(`Game Over! Your score is ${score}. Refresh to try again!`)
+      gameOver();
     }
   }
   updateTimer();
+}
 
-
+function gameOver(){
+  alert(`Game Over! Your score is ${score}. Refresh to try again!`);
 }
