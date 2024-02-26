@@ -1,5 +1,6 @@
 let score = 0;
 let lives = 4;
+let highScore = localStorage.getItem('highScore') || 0; 
 
 const shotSound = document.getElementById("shotmp3");
 const bgm = document.getElementById("bgm");
@@ -137,5 +138,12 @@ function startTimer(seconds){
 }
 
 function gameOver(){
-  alert(`Game Over! Your score is ${score}. Refresh to try again!`);
+  if (score > highScore) {
+    highScore = score;
+    localStorage.setItem('highScore', highScore);
+    alert(`Thank you Brave Samurai! You defeated ${score} ninjas and saved the village! \nYou are our strongest Samurai ever! Help us save another village?`);
+    location.reload();
+  };
+  alert(`Thank you Brave Samurai! You defeated ${score} ninjas and saved the village! \nOur strongest Samurai defeated ${highScore}. Try beating him?`);
+  location.reload();
 }
