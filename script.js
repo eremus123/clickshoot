@@ -4,8 +4,9 @@ let lives = 4;
 const shotSound = document.getElementById("shotmp3");
 const bgm = document.getElementById("bgm");
 const hitSound = document.getElementById("hitmp3");
+const startSound = document.getElementById("startmp3");
 
-bgm.volume = 0.5;
+bgm.volume = 0.3;
 bgm.play();
 
 const ninjas = document.querySelectorAll(".ninja");
@@ -96,11 +97,22 @@ function newNinja() {
 }
 
 function start() {
-  // console.log("start clicked");
-  // Add code to start or reset the game
-  let menu = document.getElementById("menu");
-  menu.style.display = "none";
-  // Additional game initialization code goes here
+  document.getElementById("menu").style.display = "none"; // hide menu
+  bgm.pause();
+  //rdy screen
+  ninjas.forEach((ninja) => {
+    //for each is slower than for loop
+    ninja.style.display = "none";
+  });
+  document.getElementById("ready").style.display = "block";
+  startSound.play();
+  setTimeout(() => {
+    bgm.play();
+    document.getElementById("ready").style.display = "none";
+    ninjas.forEach((ninja) => {
+      ninja.style.display = "block";
+    });
+  }, 2500);
   document.addEventListener("click", (e) => {
     if (!e.target.classList.contains("ninja")) {
       miss(e);

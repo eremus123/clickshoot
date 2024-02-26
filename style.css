@@ -9,7 +9,9 @@
 
 #title {
   text-align: center;
-  font-size: 36px;
+  font-size: 32px;
+  font-family: "menufont";
+
   color: rgb(198, 15, 15);
   bottom: 0px;
   position: absolute;
@@ -24,7 +26,7 @@ body {
 }
 
 img {
-  width: 180px;
+  width: 150px;
   position: absolute;
   /* animation-fill-mode: forwards; so the ninjas dont clip back to og position aft the animations */
 }
@@ -35,6 +37,7 @@ img {
   right: 20px;
   color: antiquewhite;
   font-size: 42px;
+  font-family: "menufont";
 }
 #lives {
   position: absolute;
@@ -42,6 +45,7 @@ img {
   right: 22px;
   color: antiquewhite;
   font-size: 42px;
+  font-family: "menufont";
 }
 /* #n1 {
   left: 36%;
@@ -111,4 +115,16 @@ img {
 
 #menu button:hover {
   background-color: #45a049;
+}
+
+#ready {
+  display: none;
+  font-family: "menufont";
+  text-align: center;
+  font-size: 62px;
+  color: rgba(0, 0, 0, 0.8);
+}
+h1,
+h3 {
+  margin: 35px; /* Adjust the value based on your preference */
 }
