@@ -126,5 +126,12 @@ img {
 }
 h1,
 h3 {
-  margin: 35px; /* Adjust the value based on your preference */
+  margin: 40px; /* Adjust the value based on your preference */
+}
+#timer {
+  display:none;
+  font-family: "menufont";
+  text-align: center;
+  font-size: 256px;
+  color: rgba(0, 0, 0, 0.3);
 }

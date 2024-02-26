@@ -27,7 +27,6 @@ ninjas.forEach((ninja) => {
     `;
   const style = document.createElement("style");
   style.innerHTML = `@keyframes ${animationId} { ${keyframes} }`;
-  console.log(`@keyframes ${animationId} { ${keyframes} }`);
   document.body.appendChild(style);
 
   ninja.style.animationName = animationId;
@@ -41,7 +40,6 @@ function randomizeAnimation(min, max) {
 }
 
 function shoot(e) {
-  //   shotSound.play();
   const clickedNinja = e.target; // Get the specific clicked ninja
   clickedNinja.style.display = "none"; // Hide the clicked ninja
   hitSound.play();
@@ -101,7 +99,6 @@ function start() {
   bgm.pause();
   //rdy screen
   ninjas.forEach((ninja) => {
-    //for each is slower than for loop
     ninja.style.display = "none";
   });
   document.getElementById("ready").style.display = "block";
@@ -112,10 +109,30 @@ function start() {
     ninjas.forEach((ninja) => {
       ninja.style.display = "block";
     });
+    startTimer(30);
   }, 2500);
   document.addEventListener("click", (e) => {
     if (!e.target.classList.contains("ninja")) {
       miss(e);
     }
   });
+}
+
+
+function startTimer(seconds){
+  const timer = document.getElementById('timer');
+  timer.style.display='block';
+  function updateTimer() {
+    if (seconds > 0) {
+        seconds--;
+        timer.innerHTML = `00:${seconds}`
+        console.log(seconds)
+        setTimeout(updateTimer, 1000); // Call itself after 1 second
+    } else {
+      alert(`Game Over! Your score is ${score}. Refresh to try again!`)
+    }
+  }
+  updateTimer();
+
+
 }
