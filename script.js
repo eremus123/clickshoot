@@ -1,5 +1,5 @@
 let score = 0;
-let lives = 3;
+let lives = 4;
 
 const shotSound = document.getElementById("shotmp3");
 const bgm = document.getElementById("bgm");
@@ -30,15 +30,9 @@ ninjas.forEach((ninja) => {
   document.body.appendChild(style);
 
   ninja.style.animationName = animationId;
-  ninja.style.animationDuration = randomizeAnimation(8000, 16000) + "ms";
+  ninja.style.animationDuration = randomizeAnimation(7000, 14000) + "ms";
   ninja.style.animationIterationCount = "infinite";
   ninja.addEventListener("click", shoot);
-});
-
-document.addEventListener("click", (e) => {
-  if (!e.target.classList.contains("ninja")) {
-    miss(e);
-  }
 });
 
 function randomizeAnimation(min, max) {
@@ -95,14 +89,21 @@ function newNinja() {
   document.body.appendChild(style);
 
   ninja.style.animationName = animationId;
-  ninja.style.animationDuration = randomizeAnimation(7000, 20000) + "ms";
+  ninja.style.animationDuration = randomizeAnimation(7000, 16000) + "ms";
   ninja.style.animationIterationCount = "infinite";
   document.body.appendChild(ninja);
   ninja.addEventListener("click", shoot);
 }
 
 function start() {
+  // console.log("start clicked");
   // Add code to start or reset the game
-  document.getElementById("menu-overlay").classList.add("hidden");
+  let menu = document.getElementById("menu");
+  menu.style.display = "none";
   // Additional game initialization code goes here
+  document.addEventListener("click", (e) => {
+    if (!e.target.classList.contains("ninja")) {
+      miss(e);
+    }
+  });
 }
