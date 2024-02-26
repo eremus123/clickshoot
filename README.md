@@ -1,6 +1,6 @@
 # <clickshoot>
 
-A 'duck-hunt' inspired shooting game implemented in Javascript and HTML5 (DOM instead of canvas).
+An innocent Japanese village in olden Kyoto is under attack by the neighboring Ninjas! Will you be the chosen samurai and step up to embrace your destiny? This 'duck-hunt' inspired shooting game gets you in on the action by trying to defeat as many ninjas as you can within 30 seconds! Click them all and save Kyoto! Implemented in Javascript and HTML5 (DOM instead of canvas).
 
 # Screenshot
 
@@ -19,8 +19,8 @@ A 'duck-hunt' inspired shooting game implemented in Javascript and HTML5 (DOM in
 
 # Next Steps
 
-- Future enhancement one...
-- Future enhancement two...
+- Campaign Mode - Introducing friendly characters and different stages and difficulties!
+- Enhanced Environmental Objects - Ninjas can hide behind trees and buildings!
 
 # Acknowledgements & References
 

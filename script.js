@@ -42,8 +42,8 @@ function randomizeAnimation(min, max) {
 }
 
 function shoot(e) {
-  const clickedNinja = e.target; // Get the specific clicked ninja
-  clickedNinja.style.display = "none"; // Hide the clicked ninja
+  const clickedNinja = e.target;
+  clickedNinja.style.display = "none"
   hitSound.play();
   updateScore();
   newNinja();
@@ -97,14 +97,16 @@ function newNinja() {
 }
 
 function start() {
-  document.getElementById("menu").style.display = "none"; // hide menu
+  document.getElementById("menu").style.display = "none";
   bgm.pause();
-  //rdy screen
+
   ninjas.forEach((ninja) => {
     ninja.style.display = "none";
   });
+
   document.getElementById("ready").style.display = "block";
   startSound.play();
+  
   setTimeout(() => {
     bgm.play();
     document.getElementById("ready").style.display = "none";
@@ -113,6 +115,7 @@ function start() {
     });
     startTimer(30);
   }, 2500);
+
   document.addEventListener("click", (e) => {
     if (!e.target.classList.contains("ninja")) {
       miss(e);
@@ -130,7 +133,7 @@ function startTimer(seconds){
         if (seconds>9){
           timer.innerHTML = `00:${seconds}`;
         } else timer.innerHTML = `00:0${seconds}`
-        setTimeout(updateTimer, 1000); // Call itself after 1 second
+        setTimeout(updateTimer, 1000);
     } else {
       gameOver();
     }

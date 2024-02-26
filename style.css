@@ -3,8 +3,8 @@
 }
 
 @font-face {
-  font-family: "menufont"; /* Define a name for your custom font */
-  src: url("assets/menufont.ttf") format("truetype"); /* Provide the path to your font file */
+  font-family: "menufont";
+  src: url("assets/menufont.ttf") format("truetype");
 }
 
 #title {
@@ -28,7 +28,6 @@ body {
 img {
   width: 150px;
   position: absolute;
-  /* animation-fill-mode: forwards; so the ninjas dont clip back to og position aft the animations */
 }
 
 #score {
@@ -47,40 +46,7 @@ img {
   font-size: 42px;
   font-family: "menufont";
 }
-/* #n1 {
-  left: 36%;
-  top: 38%;
-}
 
-#n2 {
-  animation-name: ninja1;
-  animation-duration: 10000ms;
-  animation-iteration-count: infinite;
-}
-
-#n3 {
-  animation-name: ninja1;
-  animation-duration: 6000ms;
-  animation-iteration-count: infinite;
-}
-
-#n4 {
-  left: 80%;
-  top: 37%;
-}
-
-@keyframes ninja1 {
-  0% {
-    left: -20%;
-    top: 63%;
-  }
-
-  100% {
-    left: 130%;
-    top: 63%;
-  }
-} */
-/* Add styles for the menu overlay */
 #menu {
   display: flex;
   font-family: "menufont";
@@ -126,7 +92,7 @@ img {
 }
 h1,
 h3 {
-  margin: 40px; /* Adjust the value based on your preference */
+  margin: 40px;
 }
 #timer {
   display:none;
