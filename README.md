@@ -1,21 +1,21 @@
-# <clickshoot>
+# clickshoot
 
 An innocent Japanese village in olden Kyoto is under attack by the neighboring Ninjas! Will you be the chosen samurai and step up to embrace your destiny? This 'duck-hunt' inspired shooting game gets you in on the action by trying to defeat as many ninjas as you can within 30 seconds! Click them all and save Kyoto! Implemented in Javascript and HTML5 (DOM instead of canvas).
 
 # Screenshots
-###Welcome Screen:
+### Welcome Screen:
 <img src="https://i.imgur.com/XqISViz.jpeg">
 
 
-###Game Start Screen:
+### Game Start Screen:
 <img src="https://imgur.com/BEExwM7.jpeg">
 
 
-###Gameplay Screenshot:
+### Gameplay Screenshot:
 <img src="https://imgur.com/Hqt2RpE.jpeg">
 
 
-###End Game Screen:
+### End Game Screen:
 <img src="https://imgur.com/gxEtxSC.jpeg">
 
 
@@ -27,6 +27,7 @@ An innocent Japanese village in olden Kyoto is under attack by the neighboring N
 
 # Getting Started
 
+You have 30 seconds to click on as many ninjas as you can! Be careful not to miss as you will lose a life. Lose 3 lives and it's game over for you and the village! Do your best brave samurai
 [Click to Play!](https://eremus123.github.io/clickshoot/)
 
 # Next Steps
