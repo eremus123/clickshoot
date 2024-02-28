@@ -36,5 +36,12 @@
     <audio id="gameovermp3" src="./assets/gameover.mp3"></audio>
     <audio id="bgm" src="./assets/bgm.wav" loop="true"></audio>
     <script src="./script.js"></script>/>
+    <script>
+      // Wait for the document to be fully loaded
+      document.addEventListener("DOMContentLoaded", function() {
+        // Now you can use the start function
+        document.getElementById("start").addEventListener("click", start);
+      });
+    </script>
   </body>
 </html>
