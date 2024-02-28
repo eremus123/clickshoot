@@ -3,18 +3,21 @@
 An innocent Japanese village in olden Kyoto is under attack by the neighboring Ninjas! Will you be the chosen samurai and step up to embrace your destiny? This 'duck-hunt' inspired shooting game gets you in on the action by trying to defeat as many ninjas as you can within 30 seconds! Click them all and save Kyoto! Implemented in Javascript and HTML5 (DOM instead of canvas).
 
 # Screenshots
-
+###Welcome Screen:
 <img src="https://i.imgur.com/XqISViz.jpeg">
-Welcome Screen
 
+
+###Game Start Screen:
 <img src="https://imgur.com/BEExwM7.jpeg">
-Game Start Screen
 
+
+###Gameplay Screenshot:
 <img src="https://imgur.com/Hqt2RpE.jpeg">
-Gameplay Screenshot
 
+
+###End Game Screen:
 <img src="https://imgur.com/gxEtxSC.jpeg">
-End Game Screen
+
 
 # Technologies Used
 
@@ -46,4 +49,5 @@ End Game Screen
 - Thank You Effect: https://pixabay.com/sound-effects/arigatoo-japanese-thanks-danke-176536/
 - Game Over Effect: https://pixabay.com/sound-effects/flute-alto-88973/
 - Tutorial: https://www.youtube.com/watch?v=v6QUZ5veMlA
+- Debugging: ChatGPT 3.5
 - Font: https://www.fontspace.com/madou-futo-maru-gothic-font-f76590
