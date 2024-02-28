@@ -156,7 +156,9 @@ function gameOver(){
     localStorage.setItem('highScore', highScore);
     alert(`Thank you Brave Samurai! You defeated ${score} ninjas and saved the village! \nYou are our strongest Samurai ever! Help us save another village?`);
     location.reload();
+    return;
   };
   alert(`Thank you Brave Samurai! You defeated ${score} ninjas and saved the village! \nOur strongest Samurai defeated ${highScore}. Try beating him?`);
   location.reload();
+  return;
 }
