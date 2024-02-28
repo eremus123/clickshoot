@@ -27,8 +27,8 @@ An innocent Japanese village in olden Kyoto is under attack by the neighboring N
 
 # Getting Started
 
-You have 30 seconds to click on as many ninjas as you can! Be careful not to miss as you will lose a life. Lose 3 lives and it's game over for you and the village! Do your best brave samurai
-[Click to Play!](https://eremus123.github.io/clickshoot/)
+You have 30 seconds to click on as many ninjas as you can! Be careful not to miss as you will lose a life. Lose 3 lives and it's game over for you and the village! Do your best brave samurai:
+[Click to Start!](https://eremus123.github.io/clickshoot/)
 
 # Next Steps
 
