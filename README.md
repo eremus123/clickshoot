@@ -24,7 +24,7 @@ End Game Screen
 
 # Getting Started
 
-[Click to Play!](your deployment url here)
+[Click to Play!](https://eremus123.github.io/clickshoot/)
 
 # Next Steps
 
