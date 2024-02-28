@@ -59,7 +59,7 @@ function miss(e) {
 
   if (lives === 0) {
     gameIsOver = true; // Set the game over flag
-    alert(`Game Over! Your score is ${score}. Refresh to try again!`);
+    gameOver()
   }
 }
 
