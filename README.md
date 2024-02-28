@@ -2,10 +2,19 @@
 
 An innocent Japanese village in olden Kyoto is under attack by the neighboring Ninjas! Will you be the chosen samurai and step up to embrace your destiny? This 'duck-hunt' inspired shooting game gets you in on the action by trying to defeat as many ninjas as you can within 30 seconds! Click them all and save Kyoto! Implemented in Javascript and HTML5 (DOM instead of canvas).
 
-# Screenshot
+# Screenshots
 
-<img src="url to your image on imgur">
-<img src="url to your image on imgur">
+<img src="https://i.imgur.com/XqISViz.jpeg">
+Welcome Screen
+
+<img src="https://imgur.com/BEExwM7.jpeg">
+Game Start Screen
+
+<img src="https://imgur.com/Hqt2RpE.jpeg">
+Gameplay Screenshot
+
+<img src="https://imgur.com/gxEtxSC.jpeg">
+End Game Screen
 
 # Technologies Used
 
