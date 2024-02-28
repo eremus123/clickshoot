@@ -1,6 +1,8 @@
 let score = 0;
-let lives = 4;
+let lives = 3;
 let highScore = localStorage.getItem('highScore') || 0; 
+let gameIsOver = false;
+
 
 const shotSound = document.getElementById("shotmp3");
 const bgm = document.getElementById("bgm");
@@ -50,11 +52,14 @@ function shoot(e) {
 }
 
 function miss(e) {
+  if (gameIsOver) return; // Don't proceed if the game is already over
   shotSound.volume = 0.1;
   shotSound.play();
   loseLives();
+
   if (lives === 0) {
-    gameOver();
+    gameIsOver = true; // Set the game over flag
+    alert(`Game Over! Your score is ${score}. Refresh to try again!`);
   }
 }
 

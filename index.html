@@ -41,7 +41,12 @@
       document.addEventListener("DOMContentLoaded", function() {
         // Now you can use the start function
         document.getElementById("start").addEventListener("click", start);
-      });
+      }
+      )
+      document.addEventListener("click", function(e) {
+    if (!e.target.classList.contains("ninja")) {
+      miss(e);
+    };
     </script>
   </body>
 </html>
